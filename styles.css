@@ -339,3 +339,159 @@ h1, h2, h3, p { margin-top: 0; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/*
+  TEMA ROXO + MARROM ESCURO
+  Cole este bloco no final do seu styles.css.
+  Mantém #8258b9 como roxo de destaque e usa lilás claro para textos pequenos.
+*/
+:root {
+  color-scheme: dark;
+  --paper: #241d23;
+  --paper-deep: #322630;
+  --ink: #f4ebf2;
+  --ink-soft: #d4c7d7;
+  --forest: #322536;
+  --forest-2: #44334a;
+  --moss: #8258b9;
+  --moss-dark: #c6a6e8;
+  --sage: #c6a6e8;
+  --sage-light: #e7d8f5;
+  --cream: #f4efe6;
+  --muted: #c1b3c6;
+  --line: rgba(230, 216, 239, 0.2);
+  --white-line: rgba(244, 239, 230, 0.22);
+  --rose: #b58d6b;
+  --shadow: 0 24px 70px rgba(7, 4, 9, 0.42);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(ellipse at 8% 8%, rgba(130, 88, 185, 0.14), transparent 27rem),
+    radial-gradient(ellipse at 92% 34%, rgba(181, 141, 107, 0.11), transparent 30rem),
+    var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+}
+
+:focus-visible { outline-color: #c6a6e8; }
+.wordmark { color: var(--ink); }
+.wordmark small { color: var(--muted); }
+.wordmark-mark { border-color: rgba(198, 166, 232, 0.42); background: rgba(130, 88, 185, 0.2); }
+.main-nav a { color: var(--ink-soft); }
+.main-nav a:hover { color: var(--sage-light); }
+
+.profile-card {
+  border-color: rgba(130, 88, 185, 0.75);
+  background:
+    radial-gradient(ellipse at 4% 1%, rgba(130, 88, 185, 0.27), transparent 28rem),
+    linear-gradient(138deg, #3e284b, #27192d 72%);
+  box-shadow: 0 0 0 5px rgba(130, 88, 185, 0.16), var(--shadow);
+}
+.profile-card::before,
+.profile-card::after { border-color: rgba(231, 216, 245, 0.13); }
+.portrait-slot {
+  border-color: rgba(198, 166, 232, 0.78);
+  background: linear-gradient(145deg, rgba(130, 88, 185, 0.2), rgba(41, 31, 47, 0.55));
+}
+.portrait-slot::before { border-color: rgba(231, 216, 245, 0.32); }
+.portrait-sun { background: rgba(198, 166, 232, 0.17); }
+.eyebrow-dot,
+.status-dot {
+  background: #c6a6e8;
+  box-shadow: 0 0 0 4px rgba(198, 166, 232, 0.14);
+}
+.profile-role span { border-color: rgba(198, 166, 232, 0.45); color: var(--sage-light); }
+.profile-stamps span { border-color: rgba(198, 166, 232, 0.42); }
+.profile-divider span { border-color: rgba(231, 216, 245, 0.65); }
+.profile-fact,
+.profile-fact:first-child { border-left-color: rgba(198, 166, 232, 0.4); }
+.skill-tags li { border-color: rgba(198, 166, 232, 0.32); }
+.skill-tags .tag-current { border-color: rgba(198, 166, 232, 0.55); background: rgba(130, 88, 185, 0.22); }
+.skill-tags .tag-interest { color: #e0c7f2; }
+
+.section-kicker { color: var(--sage-light); }
+.section-kicker span { border-color: rgba(198, 166, 232, 0.42); color: var(--sage-light); }
+.section-heading h2,
+.project-body h3,
+.learning-card h3,
+.learning-note strong { color: var(--ink); }
+.section-heading h2 em { color: var(--sage-light); }
+.about-copy { color: var(--ink-soft); }
+.about-note { border-left-color: var(--moss); background: rgba(130, 88, 185, 0.16); }
+.about-note p { color: var(--ink-soft); }
+.note-mark { color: var(--sage-light); }
+.section-aside { border-left-color: var(--moss); color: var(--ink-soft); }
+
+.filter-button { border-color: rgba(198, 166, 232, 0.38); color: var(--ink-soft); }
+.filter-button:hover { border-color: var(--sage-light); }
+.filter-button.is-active { border-color: var(--moss); background: var(--moss); color: var(--cream); }
+.filter-button span { color: var(--cream); }
+.project-card {
+  border-color: rgba(198, 166, 232, 0.28);
+  background: #322536;
+  color: var(--ink);
+}
+.project-preview { background: #44334a; }
+.project-preview::before,
+.project-preview::after { border-color: rgba(231, 216, 245, 0.14); }
+.preview-manga { background: linear-gradient(135deg, #53405f, #392b43); }
+.preview-sanctuary { background: linear-gradient(135deg, #59463c, #382b30); }
+.preview-lore { background: linear-gradient(135deg, #58404f, #3b3046); }
+.manga-shelf { border-bottom-color: #a989ca; }
+.spine-one { background: #8060a7; }
+.spine-two { background: #b58d6b; }
+.spine-three { background: #b49fca; }
+.spine-four { background: #d6b98a; }
+.preview-pills i { background: #eadcf5; color: #5b3b79; }
+.lore-tile { border-color: rgba(231, 216, 245, 0.3); background: #74578f; }
+.lore-tile-large { background: radial-gradient(circle at 50% 40%, #bdab9a 0 19%, transparent 20%), linear-gradient(150deg, #49324f 10%, #8258b9 54%, #b58d6b); }
+.lore-tile-olive { background: #8258b9; }
+.lore-tile-rose { background: #9b6578; }
+.lore-tile-paper { background: #efe5d7; color: #49384f; }
+.lore-caption i { background: rgba(52, 40, 58, 0.42); }
+.project-meta { color: var(--sage-light); }
+.project-number { color: #c1b3c6; }
+.project-body h3 { color: var(--ink); }
+.project-summary { color: #ddd0e3; }
+.project-idea { border-left-color: var(--moss); background: rgba(130, 88, 185, 0.17); }
+.project-idea p { color: #f0e8f2; }
+.project-idea strong { color: #fff7ef; }
+.idea-symbol { color: var(--sage-light); }
+.project-details { border-bottom-color: rgba(231, 216, 245, 0.18); }
+.project-details summary { color: var(--sage-light); }
+.project-details summary:hover { color: var(--cream); }
+.project-details ul { color: var(--ink-soft); }
+.project-details code { background: #493a50; color: #f4ebf2; }
+.project-tools { color: #d6b8f0; }
+.project-tools span { color: #c1b3c6; }
+.small-disclaimer,
+.projects-footnote { color: #c1b3c6; }
+.projects-footnote span { color: var(--sage-light); }
+
+.learning-card { border-color: rgba(198, 166, 232, 0.28); background: #322630; }
+.learning-card-featured { border-color: rgba(130, 88, 185, 0.75); background: linear-gradient(150deg, #403148, #322630); }
+.learning-index { color: var(--sage-light); }
+.learning-index span { color: var(--muted); }
+.learning-card p { color: var(--ink-soft); }
+.learning-status-label { border-color: rgba(198, 166, 232, 0.42); color: var(--sage-light); }
+.learning-note { background: rgba(130, 88, 185, 0.16); color: var(--ink-soft); }
+.learning-note > span { color: var(--sage-light); }
+
+.contact-card {
+  border-color: rgba(130, 88, 185, 0.72);
+  background: linear-gradient(135deg, #3c2a46, #2d222d);
+  box-shadow: 0 14px 35px rgba(7, 4, 9, 0.3);
+}
+.contact-card .section-kicker { color: var(--sage-light); }
+.contact-card .section-kicker span { color: var(--sage-light); border-color: rgba(231, 216, 245, 0.42); }
+.contact-copy { color: #ded2e1; }
+.contact-placeholders p { border-color: rgba(198, 166, 232, 0.4); }
+.contact-placeholders code { color: var(--sage-light); }
+.site-footer { color: var(--muted); }
+.site-footer > span:first-child { color: var(--ink-soft); }
