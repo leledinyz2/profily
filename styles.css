@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
 
 :root {
-  color-scheme: light;
-  --paper: #f3f2ea;
-  --paper-deep: #e8e8d9;
-  --ink: #263126;
-  --ink-soft: #455044;
-  --forest: #263126;
-  --forest-2: #303a2c;
-  --moss: #7e945b;
-  --moss-dark: #5c7041;
-  --sage: #bdca94;
-  --sage-light: #dce5bd;
+  color-scheme: dark;
+  --paper: #635131;
+  --paper-deep: #6e493a;
+  --ink: #c8aef2;
+  --ink-soft: #cbbce3;
+  --forest: #2b2740;
+  --forest-2: #413754;
+  --moss: #6d5494;
+  --moss-dark: #612382;
+  --sage: #9367b5;
+  --sage-light: #c791eb;
   --cream: #f3f0df;
-  --muted: #737765;
+  --muted: #766a8a;
   --line: rgba(42, 53, 39, 0.18);
   --white-line: rgba(245, 244, 225, 0.24);
-  --rose: #c78977;
+  --rose: #ba9f4e;
   --serif: "Playfair Display", Georgia, serif;
   --sans: "DM Sans", "Trebuchet MS", sans-serif;
   --mono: "DM Mono", "Courier New", monospace;
